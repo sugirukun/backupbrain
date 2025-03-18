@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Live Server 開発ガイド</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kaisei+Decol&family=Yomogi&family=Zen+Kurenaido&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Zen Kurenaido', sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .graphic-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+        .title {
+            font-size: 32px;
+            font-weight: bold;
+            background: linear-gradient(45deg, #593C47, #F25C05);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .section {
+            display: flex;
+            margin-bottom: 30px;
+            gap: 20px;
+        }
+        .card {
+            flex: 1;
+            background-color: white;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            position: relative;
+            border: 2px solid #F2E63D;
+        }
+        .card-title {
+            color: #1e40af;
+            font-size: 18px;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+        .card-title::before {
+            content: '🔧';
+            margin-right: 10px;
+        }
+        .hand-drawn-arrow {
+            position: absolute;
+            right: -30px;
+            top: 50%;
+            transform: rotate(20deg);
+            font-size: 30px;
+            color: #F25C05;
+        }
+        .note {
+            background-color: #F2E63D;
+            padding: 10px;
+            border-radius: 8px;
+            margin-top: 15px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="graphic-container">
+        <div class="header">
+            <h1 class="title">🌐 Live Server 開発ガイド</h1>
+            <div>2024年 Web開発テクニック</div>
+        </div>
+
+        <div class="section">
+            <div class="card">
+                <div class="card-title">Live Serverとは？</div>
+                <p>Visual Studio Code拡張機能</p>
+                <p>ローカル開発サーバーを簡単起動</p>
+                <p>リアルタイムにHTML/CSS/JS変更を反映</p>
+                <div class="note">🔒 公式Marketplaceから安全に提供</div>
+                <div class="hand-drawn-arrow">➡️</div>
+            </div>
+
+            <div class="card">
+                <div class="card-title">起動方法</div>
+                <p>1. 「Go Live」ボタンをクリック</p>
+                <p>2. 右クリックメニューから起動</p>
+                <p>3. コマンドパレットから起動</p>
+                <div class="note">📁 プロジェクトフォルダを正しく開くこと</div>
+                <div class="hand-drawn-arrow">➡️</div>
+            </div>
+
+            <div class="card">
+                <div class="card-title">トラブルシューティング</div>
+                <p>✅ ファイル保存確認</p>
+                <p>✅ ファイル位置チェック</p>
+                <p>✅ ブラウザキャッシュクリア</p>
+                <p>✅ Live Server再起動</p>
+                <div class="note">🛠️ 迅速な対応が鍵</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="card">
+                <div class="card-title">スマホでの動作確認</div>
+                <p>📱 同一Wi-Fi環境でアクセス</p>
+                <p>🌐 PCのIPアドレスに接続</p>
+                <p>🔒 HTTPS化が推奨</p>
+                <div class="note">🌍 外部デバイスでリアルタイム確認</div>
+            </div>
+
+            <div class="card">
+                <div class="card-title">ngrokの活用</div>
+                <p>🚀 HTTPSトンネリングツール</p>
+                <p>🔑 認証トークンの設定</p>
+                <p>💻 基本コマンド: ngrok http 5500</p>
+                <div class="note">🌐 外部公開を簡単に</div>
+            </div>
+
+            <div class="card">
+                <div class="card-title">開発のヒント</div>
+                <p>🔍 適切なツール選択</p>
+                <p>🛡️ セキュリティへの配慮</p>
+                <p>🚀 効率的な開発環境構築</p>
+                <div class="note">💡 常に学び、改善し続けること</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
